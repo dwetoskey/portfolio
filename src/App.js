@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Nav from './components/Nav';
+import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
+import About from './components/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Modal, Navbar } from 'react-bootstrap';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const [categories] = useState([
+      {
+        name: 'Portfolio', description: 'Work includes HTML, CSS, JS, Handlebars, Bootstrap, mySQL, noSQL, React, and more!',
+      },
+    ]);
+    
+    const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-export default App;
+    const [contactSelected, setContactSelected] = useState(false);
+
+    return (
+      <div>
+        <Nav
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+        ></Nav>
+        <main>
+          {!contactSelected ? (
+            <>
+              <Portfolio currentCategory={currentCategory}></Portfolio>
+              <About></About>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
+        </main>
+      </div>
+    );
+  }
+
+  export default App;

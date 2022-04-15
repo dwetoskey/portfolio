@@ -1,12 +1,21 @@
 {
+  "homepage": "http://dwetoskey.github.io/portfolio",
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "github:testing-library/jest-dom",
+    "@testing-library/react": "^13.1.0",
+    "@testing-library/user-event": "^14.1.0",
+    "bootstrap": "^5.1.3",
     "cra-template": "1.1.3",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "react": "^18.0.0",
+    "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0"
+    "react-scripts": "^2.1.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "gh-pages": "^3.2.3"
   }
 }
