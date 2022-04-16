@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav'
 
 
 
-function Nav(props) {
+function Navigation(props) {
     const {
         categories = [],
         setCurrentCategory,
@@ -13,19 +14,17 @@ function Nav(props) {
         setContactSelected,
     } = props;
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+    useEffect(() => { document.title = capitalizeFirstLetter(currentCategory.name);}, [currentCategory]);
 
     return (
         <header>
         <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">David Wetoskey</Navbar.Brand>
+                <Navbar.Brand href="/">David Wetoskey</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="me-auto">
                     <Nav.Link href="#about" onClick={() => setContactSelected(false)}>About Me</Nav.Link>
                     <Nav.Link href="#portfolio" onClick={() => setContactSelected(false)}>Portfolio</Nav.Link>
-                    <Nav.Link href="#contact" className= {`mx-2 ${contactSelected && 'navActive'}`}>
+                    <Nav.Link href="#contact" className= {`${contactSelected && 'navActive'}`}>
                         <span onClick={() => setContactSelected(true)}>Contact</span>
                         </Nav.Link>
                     {categories.map((category) => (
@@ -51,4 +50,4 @@ function Nav(props) {
     );
 }
 
-export default Nav;
+export default Navigation;

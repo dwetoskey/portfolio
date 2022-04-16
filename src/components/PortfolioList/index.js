@@ -33,6 +33,7 @@ const PortfolioList = ({ category }) => {
     const currentPortfolios = portfolios.filter(portfolio => portfolio.category === category);
     
     const toggleModal = (image, i) => {
+        console.log("modal console log =============", image, i);
         setCurrentPortfolio({ ...image, index: i });
         setIsModalOpen(!isModalOpen);
     };
@@ -47,7 +48,7 @@ return (
         <div>
             {currentPortfolios.map((image, i) => (
                 <img
-                src={require(`../../assets/${category}/${i}.png`).default}
+                src={require(`../../assets/images/${category}/${i}.png`)}
                 alt={image.name}
                 onClick={() => toggleModal(image, i)}
                 key={image.name}

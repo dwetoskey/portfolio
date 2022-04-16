@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
-import Nav from './components/Nav';
+import Navigation from './components/Nav';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Modal, Navbar } from 'react-bootstrap';
+
 
 function App() {
     const [categories] = useState([
       {
-        name: 'Portfolio', description: 'Work includes HTML, CSS, JS, Handlebars, Bootstrap, mySQL, noSQL, React, and more!',
+        name: 'portfolio', description: 'Work includes HTML, CSS, JS, Handlebars, Bootstrap, mySQL, noSQL, React, and more!',
       },
     ]);
     
@@ -19,17 +19,18 @@ function App() {
 
     return (
       <div>
-        <Nav
+        <Navigation
           categories={categories}
           setCurrentCategory={setCurrentCategory}
           currentCategory={currentCategory}
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
-        ></Nav>
+        ></Navigation>
         <main>
           {!contactSelected ? (
             <>
               <Portfolio currentCategory={currentCategory}></Portfolio>
+              {/* <Portfolio></Portfolio> */}
               <About></About>
             </>
           ) : (
