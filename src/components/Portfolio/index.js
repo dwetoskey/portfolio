@@ -11,7 +11,9 @@ function Portfolio(props) {
     
     return(
         <Container>
+            
             <Row>
+                
                 <Col>
             <Card >
             <Card.Img variant="top" src={require(`../../assets/images/portfolio/0.png`)} />

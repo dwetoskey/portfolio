@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
+import '../../index.css';
 
 
 
@@ -18,7 +19,11 @@ function Navigation(props) {
 
     return (
         <header>
+          
         <Navbar bg="light" expand="lg">
+        <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
                 <Navbar.Brand href="/">David Wetoskey</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="me-auto">

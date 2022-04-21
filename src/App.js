@@ -4,6 +4,7 @@ import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     const [contactSelected, setContactSelected] = useState(false);
 
     return (
+      
       <div>
         <Navigation
           categories={categories}
@@ -27,10 +29,13 @@ function App() {
           setContactSelected={setContactSelected}
         ></Navigation>
         <main>
+        <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
+          
           {!contactSelected ? (
             <>
               <Portfolio currentCategory={currentCategory}></Portfolio>
-              {/* <Portfolio></Portfolio> */}
               <About></About>
             </>
           ) : (
