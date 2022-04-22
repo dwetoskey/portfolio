@@ -1,16 +1,15 @@
 import React from "react";
 import coverImage from '../../assets/cover/coverImage.jpg';
 import Card from 'react-bootstrap/Card'
+import { Container } from "react-bootstrap";
 
 function About() {
     return (
-        
+        <Container>
+            
         <Card
         bg="info">
-            <Card.Text>
-                
-            <h1 id="about">About Me</h1>
-            </Card.Text>
+           <Card.Title>About Me</Card.Title>
             
             <Card.Text>
                 <p>
@@ -24,6 +23,7 @@ function About() {
             <Card.Img variant="bottom"src={coverImage}>
             </Card.Img>
             </Card>
+            </Container>
     );
 }
 

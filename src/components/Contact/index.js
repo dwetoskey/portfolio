@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
+import '../../index.css';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -62,6 +63,7 @@ function ContactForm() {
 
       <h1>My Contact info</h1>
       <p>Email: dwetoskey224@gmail.com | Phone: 517-303-9326 </p>
+      
     </section>
   );
 }

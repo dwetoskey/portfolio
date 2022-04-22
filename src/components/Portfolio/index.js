@@ -4,15 +4,18 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 
 function Portfolio(props) {
     
     return(
-        <Container>
-            
-            <Row>
+        
+        <Container fluid="md">
+            <Carousel>
+            <Carousel.Item>
+        
                 
                 <Col>
             <Card >
@@ -29,6 +32,8 @@ function Portfolio(props) {
             </Card.Body>
             </Card>
             </Col>
+            </Carousel.Item>
+            <Carousel.Item>
             <Col>
             <Card>
             <Card.Img variant="top" src={require("../../assets/images/portfolio/1.png")} />
@@ -44,11 +49,10 @@ function Portfolio(props) {
             </Card.Body>
             </Card>
             </Col>
-            </Row>
+            </Carousel.Item>
+    
 
-            <br></br>
-
-            <Row>
+            <Carousel.Item>
             <Col>
             <Card>
             <Card.Img variant="top" src={require("../../assets/images/portfolio/2.png")} />
@@ -63,7 +67,9 @@ function Portfolio(props) {
             </Card.Body>
             </Card>
             </Col>
+            </Carousel.Item>
 
+            <Carousel.Item>
             <Col>
             <Card>
             <Card.Img variant="top" src={require("../../assets/images/portfolio/3.png")} />
@@ -79,8 +85,11 @@ function Portfolio(props) {
             </Card.Body>
             </Card>
             </Col>
-        </Row>
+            </Carousel.Item>
+ 
+        </Carousel>
         </Container>
+        
 
     );
 }
