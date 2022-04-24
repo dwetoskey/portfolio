@@ -48,3 +48,11 @@ footer{
   left: 0;
   width: 100%;
 }
+
+.carouselImg{
+	height: auto;
+}
+
+.carousel {
+	position: relative;
+}

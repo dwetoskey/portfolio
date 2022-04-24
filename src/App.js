@@ -35,17 +35,19 @@ const myDisplay = () => {
         <title>{currentCategory}</title>
       </Helmet>
     <div  className="mh-100">
-
+      <header>
         <Header
         currentCategory={currentCategory}
         setCurrentCategory={setCurrentCategory}
         ></Header>
-        
+        </header>
 
       <main >
+        <body>
         <div className='d-flex justify-content-center'>
         { myDisplay() }
         </div>
+        </body>
       </main>
       <footer>
         <Footer></Footer>

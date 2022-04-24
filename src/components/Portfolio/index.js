@@ -14,13 +14,13 @@ function Portfolio(props) {
     return(
         
         <Container fluid="md" className='bg-transparent'>
-            <Carousel className='bg-transparent'>
+            <Carousel className='bg-transparent carouselImg'>
             <Carousel.Item>
         
                 
                 <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require(`../../assets/images/portfolio/1.jpeg`)} />
+            <img className="d-block w-80 h-75" variant="top" src={require(`../../assets/images/portfolio/1.jpg`)} />
             <Card.Body >
                 <Card.Title className='fs-2'>Ogre Quest</Card.Title>
                 <Card.Text>
@@ -40,7 +40,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img className="d-block w-80 h-75" variant="top" src={require("../../assets/images/portfolio/0.jpeg")} />
+            <img className="d-block w-80 h-75" variant="top" src={require("../../assets/images/portfolio/0.jpg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Mondegreen</Card.Title>
                 <Card.Text>
@@ -61,7 +61,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/4.jpeg")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/4.jpg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Password Generator</Card.Title>
                 <Card.Text>
@@ -82,7 +82,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/6.jpeg")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/6.jpg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Regex Tutorial for Matching an Email</Card.Title>
                 <Card.Text>
@@ -103,7 +103,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/2.jpeg")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/2.jpg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Readme.md Generator</Card.Title>
                 <Card.Text>
@@ -123,7 +123,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/3.jpeg")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/3.jpg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Team Profile Generator</Card.Title>
                 <Card.Text>
