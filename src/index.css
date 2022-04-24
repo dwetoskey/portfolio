@@ -6,10 +6,12 @@ span[role ='img'] {
 
 html {
   height: 100%;
+  width:100%;
 }
 
 .divHeight{
   height: 100vh;
+  width: 100vh;
 }
 
 .aboutContainer {

@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 
 function Landing() {
     return (
-        <div>
+        <div className="">
 
             <Row>
             <Container className="d-flex justify-content-center">

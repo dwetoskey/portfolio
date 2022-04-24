@@ -20,7 +20,7 @@ function Portfolio(props) {
                 
                 <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require(`../../assets/images/portfolio/0.png`)} />
+            <Card.Img variant="top" src={require(`../../assets/images/portfolio/1.jpeg`)} />
             <Card.Body >
                 <Card.Title className='fs-2'>Ogre Quest</Card.Title>
                 <Card.Text>
@@ -61,7 +61,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/4.png")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/4.jpeg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Password Generator</Card.Title>
                 <Card.Text>
@@ -103,7 +103,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/2.png")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/2.jpeg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Readme.md Generator</Card.Title>
                 <Card.Text>
@@ -123,7 +123,7 @@ function Portfolio(props) {
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>
-            <Card.Img variant="top" src={require("../../assets/images/portfolio/3.png")} />
+            <Card.Img variant="top" src={require("../../assets/images/portfolio/3.jpeg")} />
             <Card.Body>
                 <Card.Title className='text-light fs-2'>Team Profile Generator</Card.Title>
                 <Card.Text>
