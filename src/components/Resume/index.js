@@ -10,13 +10,13 @@ import { Button } from "react-bootstrap";
 function Resume(){
 
     return (
-        <Card>
+        <Card className="bg-transparent">
   <Card.Body>
-    <Card.Title>Resume</Card.Title>
-    <Card.Text>
-      You can look at my resume by pressing the button below.
+    <Card.Title className="text-light fs-1 align-self-center">Resume</Card.Title>
+    <Card.Text className="text-light fs-3">
+      You can take a look at my resume with the link below.
     </Card.Text>
-    <Button variant="primary" onClick={()=> window.open("https://docs.google.com/document/d/1VwG2IQDwT1hjfnLeJ-SGv-n6QfhCJN_xWMrIVOQlF8M/edit?usp=sharing","_blank")}>Check it out</Button>
+    <Button onClick={()=> window.open("https://docs.google.com/document/d/1VwG2IQDwT1hjfnLeJ-SGv-n6QfhCJN_xWMrIVOQlF8M/edit?usp=sharing","_blank")} className="btn-lg fs-3 bg-transparent">Check it out</Button>
   </Card.Body>
 </Card>
     )

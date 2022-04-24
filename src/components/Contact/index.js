@@ -43,15 +43,15 @@ function ContactForm() {
     <div className='form-row align-middle'>
       <h1 data-testid="h1tag" className='text-light'>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div className='form-group col-md-2'>
+        <div className='form-group col-md-10'>
           <label htmlFor="name" className='text-light'>Name:</label>
           <input type="text" name="name" className='form-control' defaultValue={name} onBlur={handleChange} />
         </div>
-        <div className='form-group col-md-2'>
+        <div className='form-group col-md-10'>
           <label htmlFor="email" className='text-light'>Email address:</label>
           <input type="email" className='form-control' name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div className='form-group col-md-2'>
+        <div className='form-group col-md-10'>
           <label htmlFor="message" className='text-light'>Message:</label>
           <textarea name="message" className='form-control' rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
@@ -60,11 +60,14 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+        <br></br>
         <button data-testid="button" type="submit" class="btn btn-outline-light">Submit</button>
       </form>
 
+      <br></br>
+
       <h1 className='text-light'>My Contact info</h1>
-      <p className='text-light'>Email: <a href="mailto:dwetoskey224@gmail.com" className='text-light'> dwetoskey224@gmail.com</a> | Phone: 517-303-9326 </p>
+      <p className='text-light fs-3'>Email: <a href="mailto:dwetoskey224@gmail.com" className='text-light'> dwetoskey224@gmail.com</a> | Phone: 517-303-9326 </p>
       
     </div>
   </div>

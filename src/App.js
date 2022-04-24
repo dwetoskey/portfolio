@@ -5,21 +5,22 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Header from './components/Header';
 import './index.css';
+import Helmet from 'react-helmet';
 
 
 
 function App() {
-const [ currentCategory, setCurrentCategory] = useState('about');
+const [ currentCategory, setCurrentCategory] = useState('David Wetoskey');
 
 const myDisplay = () => {
   switch (currentCategory) {
-    case 'resume':
+    case 'Resume':
       return <Resume></Resume>
-    case 'portfolio':
+    case 'Portfolio':
       return <Portfolio></Portfolio>
-    case 'contact' :
+    case 'Contact' :
       return <ContactForm></ContactForm>
-    case 'about' :
+    case 'About' :
       return <About></About>
     default:
       return <About></About>
@@ -27,12 +28,17 @@ const myDisplay = () => {
 }
 
   return (
+    <div>
+      <Helmet>
+        <title>{currentCategory}</title>
+      </Helmet>
     <div  className="mh-100">
 
         <Header
         currentCategory={currentCategory}
         setCurrentCategory={setCurrentCategory}
         ></Header>
+        
 
       <main >
         <div className='d-flex justify-content-center'>
@@ -41,7 +47,7 @@ const myDisplay = () => {
       </main>
     </div>
 
-
+    </div>
   )
 }
 
