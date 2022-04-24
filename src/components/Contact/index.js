@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
 import '../../index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -38,33 +39,35 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+  <div>
+    <div className='form-row align-middle'>
+      <h1 data-testid="h1tag" className='text-light'>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        <div className='form-group col-md-2'>
+          <label htmlFor="name" className='text-light'>Name:</label>
+          <input type="text" name="name" className='form-control' defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <div className='form-group col-md-2'>
+          <label htmlFor="email" className='text-light'>Email address:</label>
+          <input type="email" className='form-control' name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        <div className='form-group col-md-2'>
+          <label htmlFor="message" className='text-light'>Message:</label>
+          <textarea name="message" className='form-control' rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit" class="btn btn-outline-light">Submit</button>
       </form>
 
-      <h1>My Contact info</h1>
-      <p>Email: dwetoskey224@gmail.com | Phone: 517-303-9326 </p>
+      <h1 className='text-light'>My Contact info</h1>
+      <p className='text-light'>Email: <a href="mailto:dwetoskey224@gmail.com" className='text-light'> dwetoskey224@gmail.com</a> | Phone: 517-303-9326 </p>
       
-    </section>
+    </div>
+  </div>
   );
 }
 

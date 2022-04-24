@@ -2,13 +2,17 @@ import React from "react";
 import coverImage from '../../assets/cover/coverImage.jpg';
 import Card from 'react-bootstrap/Card'
 import { Container } from "react-bootstrap";
+import '../../index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function About() {
     return (
-        <Container>
+        <div>
+        <Container className="w-75">
             
         <Card
-        bg="info">
+        bg="info"
+        >
            <Card.Title>About Me</Card.Title>
             
             <Card.Text>
@@ -20,10 +24,11 @@ function About() {
                     to take a look at my portfolio!
                 </p>
             </Card.Text>
-            <Card.Img variant="bottom"src={coverImage}>
-            </Card.Img>
+            <img className="mw-100" src={coverImage} />
+            
             </Card>
             </Container>
+            </div>
     );
 }
 
