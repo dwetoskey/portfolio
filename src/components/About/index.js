@@ -17,8 +17,8 @@ function About() {
             
             <Card.Text className="text-light">
                 <p>
-                    I am a full stack web developer that is completing a full stack web developement bootcamp
-                    through MSU. The bootcamp covered the MERN stack and all the building blocks for it. I thoroughly
+                    I am a web developer that is completing a full stack web developement bootcamp
+                    through Michigan State University. The bootcamp covered the MERN stack and all the building blocks for it. I thoroughly
                     enjoy front end and web design, but I find all of it interesting.
                 </p>
             </Card.Text>

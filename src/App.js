@@ -6,6 +6,8 @@ import Resume from './components/Resume';
 import Header from './components/Header';
 import './index.css';
 import Helmet from 'react-helmet';
+import Landing from './components/Landing';
+import Footer from './components/Footer';
 
 
 
@@ -14,8 +16,8 @@ const [ currentCategory, setCurrentCategory] = useState('David Wetoskey');
 
 const myDisplay = () => {
   switch (currentCategory) {
-    case 'Resume':
-      return <Resume></Resume>
+    case 'Landing':
+      return <Landing></Landing>
     case 'Portfolio':
       return <Portfolio></Portfolio>
     case 'Contact' :
@@ -23,7 +25,7 @@ const myDisplay = () => {
     case 'About' :
       return <About></About>
     default:
-      return <About></About>
+      return <Landing></Landing>
   }
 }
 
@@ -45,6 +47,9 @@ const myDisplay = () => {
         { myDisplay() }
         </div>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
 
     </div>

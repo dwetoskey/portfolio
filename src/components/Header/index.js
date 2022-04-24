@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import '../../index.css';
 import { Nav } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
+import Pdf from '../../assets/resume.pdf'
 
 function Header(props) {
     const {
@@ -15,11 +16,11 @@ function Header(props) {
 <header>
 <Navbar bg="transparent">
           
-    <Navbar.Brand href="/"  className="text-light p-3 fs-2">David Wetoskey</Navbar.Brand>
+    <Navbar.Brand href="#Landing" onClick={() => setCurrentCategory('Landing')}  className="text-light p-3 fs-2">David Wetoskey</Navbar.Brand>
     <Nav className="me-auto">
       <Nav.Link href="#About" onClick={() => setCurrentCategory('About')}  className="text-light">About Me</Nav.Link>
       <Nav.Link href="#Portfolio" onClick={() => setCurrentCategory('Portfolio')}  className="text-light">Projects</Nav.Link>
-      <Nav.Link href="#Resume" onClick={() => setCurrentCategory('Resume')}  className="text-light">Resume</Nav.Link>
+      <Navbar.Text><a className="text-light" href={Pdf} target="_blank" rel='noopener noreferrer'>Resume</a></Navbar.Text>
       <Nav.Link href="#Contact"onClick={() => setCurrentCategory('Contact')}  className="text-light">Contact</Nav.Link>
     </Nav>
   </Navbar>
