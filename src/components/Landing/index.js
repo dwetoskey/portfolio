@@ -7,6 +7,8 @@ import { Row } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Card from 'react-bootstrap/Card';
+import { FaRegEnvelope  } from 'react-icons/fa';
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import '../../index.css';
 
 
@@ -30,8 +32,9 @@ function Landing() {
                 <p className="d-flex justify-content-center fs-2">*************</p>
                 <p className="d-flex justify-content-center fs-2">HTML/CSS | Bootstrap | JavaScript | React | NodeJS | MongoDB | MySQL/NoSQL | Express</p>
                 <p className="fs-1 d-flex justify-content-center">
-                    <a href="https://github.com/dwetoskey" target="_blank"><FontAwesomeIcon href="https://github.com/dwetoskey"className="p-4" icon={faGithub} /></a>
-                    <a href="https://www.linkedin.com/in/dwetoskey" target="_blank"><FontAwesomeIcon className="p-4" icon={faLinkedin} /></a>
+                    <a className="p-4" href="https://github.com/dwetoskey" target="_blank"><BsGithub /></a>
+                    <a className="p-4" href="https://www.linkedin.com/in/dwetoskey" target="_blank"><BsLinkedin /></a>
+                    <a className="p-4" href = "mailto: wetoskeydavid@gmail.com"><FaRegEnvelope /></a>
                 </p>
 
             </Card>

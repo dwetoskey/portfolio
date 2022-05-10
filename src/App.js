@@ -19,8 +19,6 @@ const myDisplay = () => {
       return <Landing></Landing>
     case 'Portfolio':
       return <Portfolio></Portfolio>
-    case 'Contact' :
-      return <ContactForm></ContactForm>
     case 'About' :
       return <About></About>
     default:

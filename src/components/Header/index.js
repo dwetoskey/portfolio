@@ -21,7 +21,6 @@ function Header(props) {
       <Nav.Link href="#Portfolio" onClick={() => setCurrentCategory('Portfolio')}  className="text-light">Projects</Nav.Link>
       <Navbar.Text><a className="text-light text-decoration-none" href={Pdf} target="_blank" rel='noopener noreferrer'>Resume</a></Navbar.Text>
       <Nav.Link href="#About" onClick={() => setCurrentCategory('About')}  className="text-light">About Me</Nav.Link>
-      <Nav.Link href="#Contact"onClick={() => setCurrentCategory('Contact')}  className="text-light">Contact</Nav.Link>
     </Nav>
   </Navbar>
   </header>
