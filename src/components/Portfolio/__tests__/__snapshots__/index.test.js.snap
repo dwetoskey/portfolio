@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h1>
+      Portfolio
+    </h1>
+    <p>
+      Portraits of people in my life
+    </p>
+    <div>
+      <div>
+        <img
+          alt="Ogre Quest"
+          src="0.png"
+        />
+        <img
+          alt="Mondegreen"
+          src="1.png"
+        />
+        <img
+          alt="Readme Generator"
+          src="2.png"
+        />
+        <img
+          alt="Team Profile Generator"
+          src="3.png"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

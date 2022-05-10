@@ -13,11 +13,11 @@ function Header(props) {
     } = props;
 
     return (
-<header>
+<header className="headerdiv">
 <Navbar bg="transparent">
           
-    <Navbar.Brand href="#Landing" onClick={() => setCurrentCategory('Landing')}  className="text-light p-3 fs-2">David Wetoskey</Navbar.Brand>
-    <Nav className="me-auto">
+    <Navbar.Brand href="#Landing" onClick={() => setCurrentCategory('Landing')}  className="text-light fs-3 headertitle">David Wetoskey</Navbar.Brand>
+    <Nav className="me-auto headerlinks">
       <Nav.Link href="#Portfolio" onClick={() => setCurrentCategory('Portfolio')}  className="text-light">Projects</Nav.Link>
       <Navbar.Text><a className="text-light text-decoration-none" href={Pdf} target="_blank" rel='noopener noreferrer'>Resume</a></Navbar.Text>
       <Nav.Link href="#About" onClick={() => setCurrentCategory('About')}  className="text-light">About Me</Nav.Link>

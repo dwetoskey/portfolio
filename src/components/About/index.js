@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function About() {
     return (
-        <div>
+        <div className="aboutdiv">
         <Container className="w-75">
             
         <Card

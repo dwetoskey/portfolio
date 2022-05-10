@@ -15,6 +15,28 @@ function Portfolio(props) {
         
         <Container fluid="md" className='bg-transparent'>
             <Carousel className='bg-transparent carouselImg'>
+
+            <Carousel.Item>
+            <Col>
+            <Card className='bg-transparent text-light'>
+            <img className="d-block w-80 h-75" variant="top" src={require("../../assets/images/portfolio/5.png")} />
+            <Card.Body>
+                <Card.Title className='text-light fs-2'>Park-Add-Venture</Card.Title>
+                <Card.Text>
+                A web app utilizing the National Park Service API and the MERN stack with React v18, Graphql, React-Bootstrap, etc... After creating a user account, the user can search for national parks that they have visited or intend to visit and add it to their My Parks page. In their My Parks page, they can toggle whether the park has been visited or not. The user can also choose to delete a park from their profile in either the homepage or the My Parks page. Paypal has been implemented as well in the donation link.
+                </Card.Text>
+                <Card.Body className='d-flex justify-content-center'>
+                <Card.Link href="https://parkaddventure.herokuapp.com/" target="_blank">Deployed App</Card.Link>
+                <Card.Link href="https://github.com/8bitgaming/Park-Add-Venture" target="_blank">Repository</Card.Link>
+                </Card.Body>
+            </Card.Body>
+            <Card.Body>
+                
+            </Card.Body>
+            </Card>
+            </Col>
+            </Carousel.Item>
+
             <Carousel.Item>
         
                 
@@ -37,6 +59,8 @@ function Portfolio(props) {
             </Card>
             </Col>
             </Carousel.Item>
+
+
             <Carousel.Item>
             <Col>
             <Card className='bg-transparent text-light'>

@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import About from './components/About';
-import Resume from './components/Resume';
 import Header from './components/Header';
 import './index.css';
 import Helmet from 'react-helmet';
@@ -42,16 +41,18 @@ const myDisplay = () => {
         ></Header>
         </header>
 
-      <main >
+  
         <body>
         <div className='d-flex justify-content-center'>
         { myDisplay() }
         </div>
-        </body>
-      </main>
-      <footer>
+        <footer>
         <Footer></Footer>
       </footer>
+        </body>
+        
+    
+      
     </div>
 
     </div>
