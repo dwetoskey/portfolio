@@ -44,7 +44,9 @@ const myDisplay = () => {
   
         <body>
         <div className='d-flex justify-content-center'>
+          <div className='d-flex justify-content-center' style={{ width: "100vw"}}>
         { myDisplay() }
+        </div>
         </div>
         <footer>
         <Footer></Footer>
